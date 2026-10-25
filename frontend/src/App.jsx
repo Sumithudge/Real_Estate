@@ -8,11 +8,18 @@ import AdminRoutes from "./routes/AdminRoutes";
 import AdminLayout from "./admin/components/AdminLayout";
 import Projects from "./admin/pages/Projects";
 import ProjectForm from "./admin/pages/ProjectForm";
+import Home from "./pages/Home";
+import SearchPage from "./pages/Search";
+import PropertyDetails from "./pages/PropertyDetails";
 
 function App() {
   return (
     <AuthProvider>
       <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/buy" element={<SearchPage mode="Sale" />} />
+        <Route path="/rent" element={<SearchPage mode="Rent" />} />
+        <Route path="/property/:slug" element={<PropertyDetails />} />
 
         {/* ADMIN LOGIN */}
         <Route
