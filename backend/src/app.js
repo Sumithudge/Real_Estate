@@ -10,6 +10,7 @@ const amenityRoutes = require("./routes/amenityRoutes");
 const leadRoutes = require("./routes/leadRoutes");
 const authRoutes = require("./routes/authRoutes");
 const dashboardRoutes = require("./routes/dashboardRoutes");
+const propertyRoutes = require("./routes/propertyRoutes");
 
 const app = express();
 
@@ -35,6 +36,7 @@ app.get("/api/health", (req, res) => {
 });
 
 app.use("/api/projects", projectRoutes);
+app.use("/api/properties", propertyRoutes);
 app.use("/api/builders", builderRoutes);
 app.use("/api/localities", localityRoutes);
 app.use("/api/amenities", amenityRoutes);
