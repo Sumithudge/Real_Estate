@@ -8,6 +8,7 @@ import AdminRoutes from "./routes/AdminRoutes";
 import AdminLayout from "./admin/components/AdminLayout";
 import Projects from "./admin/pages/Projects";
 import ProjectForm from "./admin/pages/ProjectForm";
+import Properties from "./admin/pages/Properties";
 import Home from "./pages/Home";
 import SearchPage from "./pages/Search";
 import PropertyDetails from "./pages/PropertyDetails";
