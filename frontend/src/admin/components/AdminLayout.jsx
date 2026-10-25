@@ -115,6 +115,19 @@ const AdminLayout = () => {
             <nav className="sidebar-nav">
 
               <NavLink
+                to="/admin/properties"
+                className={navLinkClass}
+                onClick={closeSidebar}
+              >
+                <span className="sidebar-link-icon">
+                  🏠
+                </span>
+                <span className="sidebar-link-label">
+                  Properties
+                </span>
+              </NavLink>
+
+              <NavLink
                 to="/admin/projects"
                 className={navLinkClass}
                 onClick={closeSidebar}
