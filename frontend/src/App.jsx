@@ -11,6 +11,9 @@ import ProjectForm from "./admin/pages/ProjectForm";
 import Home from "./pages/Home";
 import SearchPage from "./pages/Search";
 import PropertyDetails from "./pages/PropertyDetails";
+import Directory from "./pages/Directory";
+import PostProperty from "./pages/PostProperty";
+import Saved from "./pages/Saved";
 
 function App() {
   return (
@@ -20,6 +23,10 @@ function App() {
         <Route path="/buy" element={<SearchPage mode="Sale" />} />
         <Route path="/rent" element={<SearchPage mode="Rent" />} />
         <Route path="/property/:slug" element={<PropertyDetails />} />
+        <Route path="/projects" element={<Directory kind="projects" />} />
+        <Route path="/localities" element={<Directory kind="localities" />} />
+        <Route path="/post-property" element={<PostProperty />} />
+        <Route path="/saved" element={<Saved />} />
 
         {/* ADMIN LOGIN */}
         <Route
